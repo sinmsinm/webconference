@@ -1,3 +1,9 @@
+# Webconference WebRTC platform
+It's an experiment built from two awseome frameworks. Mean.io and http://www.rtcmulticonnection.org/
+For now this is only an experiment.
+
+
+
 # [![MEAN Logo](http://www.mean.io/img/logos/meanlogo.png)](http://mean.io/) MEAN Stack
 
 [![Build Status](https://travis-ci.org/linnovate/mean.png?branch=master)](https://travis-ci.org/linnovate/mean)
