@@ -1,7 +1,7 @@
 {
   "name": "Webconference",
   "description": "Webconference : A webconference tool basen on Mean.io JS framework and RTCMulticonnection API.",
-  "version": "0.0.1,
+  "version": "0.0.1",
   "private": false,
   "author": "Alexandre Balleste <alex.balleste@gmail.com>",
   "contributors": [],
