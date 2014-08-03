@@ -18,10 +18,16 @@ Webconference.register(function(app, auth, database) {
 
   //We are adding a link to the main menu for all authenticated users
   Webconference.menus.add({
-    title: 'webconference example page',
-    link: 'webconference example page',
+    title: 'Conference Rooms',
+    link: 'all conference rooms',
     roles: ['authenticated'],
     menu: 'main'
+  });
+    
+  Webconference.menus.add({
+    title: 'Create a room',
+    link: 'Create conference room',
+    roles: ['authenticated'],
   });
 
   /**
