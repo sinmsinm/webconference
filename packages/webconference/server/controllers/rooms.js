@@ -1,7 +1,11 @@
 'use strict';
 
+require('webrtc-signaling-server');
+
+
+//multirtc.start();
+
 exports.room = function(req, res, next, id) {
-	
 };
 
 exports.create = function(req, res) {

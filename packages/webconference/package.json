@@ -6,12 +6,15 @@
     "name": "Alexandre Ballesté <alex.balleste@gmail.com>"
   },
   "mean": "0.4.0",
+  "scripts": {
+	 
+  },
   "engines": {
     "node": "0.10.x",
     "npm": "1.4.x"
   },
   "dependencies": {
-	  "rtcmulti":"latest"
+	  "webrtc-signaling-server":"git://github.com/sinmsinm/webrtc-signaling-server.git"
   },
   "license": "MIT"
 }

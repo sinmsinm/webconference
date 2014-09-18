@@ -1,0 +1,21 @@
+{
+  "name": "webconference",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sinmsinm/webconference",
+  "authors": [
+    "sinmsinm <alex.balleste@gmail.com>"
+  ],
+  "description": "Bower dependencies for webconference module",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "RTCMultiConnection-v2.0": "https://raw.githubusercontent.com/muaz-khan/WebRTC-Experiment/master/RTCMultiConnection/Library/RTCMultiConnection-v2.0.js"
+  }
+}
