@@ -26,7 +26,7 @@ Webconference.register(function(app, auth, database) {
     
   Webconference.menus.add({
     title: 'Create a room',
-    link: 'Create conference room',
+    link: 'create conference room',
     roles: ['authenticated'],
   });
 

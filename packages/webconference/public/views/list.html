@@ -1,0 +1,10 @@
+<section data-ng-controller="WebconferenceController" data-ng-init="find()">
+<ul class="rooms unstyled">
+<li data-ng-repeat="room in rooms">
+<h2>
+<a data-ng-href="#!/webconference/{{room._id}}">{{room.name}}</a>
+</h2>
+</li>
+</ul>
+<h1 data-ng-hide="!rooms || rooms.length">No rooms yet. <br> Why don't you <a href="/#!/webconference/create">Create One</a>?</h1>
+</section>
