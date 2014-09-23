@@ -30,6 +30,9 @@ Webconference.register(function(app, auth, database) {
     roles: ['authenticated'],
   });
 
+  Webconference.aggregateAsset('js', '../lib/RTCMultiConnection-v2.0/index.js', {
+        absolute: false
+    });
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above
     // Save settings with callback
