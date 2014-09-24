@@ -8,21 +8,18 @@ var mongoose = require('mongoose'),
 
 
 exports.room = function(req, res, next, id) {
-	 Room
-    .findOne({
-      _id: id
-    })
-    .exec(function(err, room) {
-      if (err) return next(err);
-      if (!room) return next(new Error('Failed to load Room ' + id));
-      req.room = room;
-      next();
+	 Room.load(id, function(err, room) {
+		if (err) return next(err);
+      	if (!room) return next(new Error('Failed to load Room ' + id));
+      	req.room = room;
+        next();
     });
 	
 };
 
 exports.create = function(req, res) {
   var room = new Room(req.body);
+  room.user = req.user;
 
   req.assert('name', 'You must enter a name').notEmpty();
 	
@@ -62,7 +59,7 @@ exports.destroy = function(req, res) {
 
 exports.all = function (req,res){
 	 Room
-    .find()
+    .find().populate('user', 'name username')
     .exec(function(err, roomlist) {
    		if (err) return res.status(400).send(new Error ('Failed to load rooms'));
 		res.json (roomlist);

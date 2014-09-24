@@ -1,3 +1,5 @@
 <section data-ng-controller="WebconferenceController" data-ng-init="findOne()">
 <h2>{{room.name}}</h2>
+
+<button data-ng-click="openRoom()" data-ng-if="isOwner(room)">Open room</button>
 </section>
